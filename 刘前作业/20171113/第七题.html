@@ -1,0 +1,15 @@
+<script>
+    var str=[1,2,3,4,5,6,7,8,9,10]
+    var sum=0;
+    for(var i=1;i<str.length;i++){
+        sum+=str[i]
+    }
+    var pj=sum/str.length;
+    var gs=0;
+    for(var j=0;j<  str.length;j++){
+        if(str[j]>=pj){
+            gs++;
+        }
+    }
+    console.log(gs);
+</script>

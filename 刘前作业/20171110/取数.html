@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function rev(i){
+			var s=0;
+			do{
+				s=s*10+i%10;
+				i=parseInt(i/10)
+			}while(i>0);
+			return s;
+			}
+			console.log(rev(prompt("输入一个数")))
+		</script>
+	</body>
+</html>

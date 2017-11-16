@@ -1,0 +1,13 @@
+<script>
+    function cd(char,n){
+        for(var i =1;i<=n;i++){
+            var str = ''
+            str +=char.charAt(char.length-1)
+            str+=char.substr(0,char.length-1)
+            char = str
+            console.log(i+':'+str);
+        }
+    }
+    cd('abcdef',2);
+
+</script>

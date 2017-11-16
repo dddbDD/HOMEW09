@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				font-size:14px;
+				width:500px;height:500;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="bo1">字号增大</button>
+		<button id="bo2">字号增小</button>
+		<div id="div1">
+			文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+			文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+			文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+		</div>
+		<script type="text/javascript">
+			var a=document.getElementById("bo1");
+			var b=document.getElementById("bo2");
+			var c=document.getElementById("div1");
+			var z=14;
+			a.onclick=function (){
+				if(z<=36){
+					z=z+2;
+				}
+				c.style.fontSize=z+"px"
+				
+			}
+			b.onclick=function (){
+				if(z>14){
+					z=z-2;
+				}
+				c.style.fontSize=z+"px"
+				
+			}
+			
+			
+		</script>
+	</body>
+</html>

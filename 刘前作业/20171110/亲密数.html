@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function qm(i){
+				var a=0;
+				for(var e=1;e<i;e++){
+					if(i%e==0){
+						a=a+e;
+					}
+					
+				}return a;
+			}
+			for(var d=1;d<=3000;d++){
+				for(var f=1;f<=d;f++){
+					if(qm(d)==f&&qm(f)==d&&d!=f){
+						console.log(d,f)
+					}
+				}
+			}
+			
+		</script>
+	</body>
+</html>
